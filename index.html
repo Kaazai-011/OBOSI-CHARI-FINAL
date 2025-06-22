@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water</title>
+  <!-- Meta description for better SEO -->
+  <meta description="Help bring clean water to communities in need with Charity: Water." />
+  <!-- Link to external CSS file (make sure the file is named styles.css) -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon for a creative touch (optional) -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Google Fonts for better text style (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation bar at the top -->
+  <header class="navbar">
+    <!-- Logo image at top left -->
+    <img src="cw_logo.png" alt="Charity: Water logo" class="logo"/>
+    <!-- Navigation links -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Impact</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section with main message and buttons -->
+  <section class="hero" style="background-image: url('1215.png');">
+    <!-- The background image above uses 1215.png as the landing page wallpaper -->
+    <!-- Overlay for background effect (optional) -->
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Give $1. See the Village Now Using Clean Water Because of You.</h1>
+      <div class="cta-buttons">
+        <a href="#" class="cta-button primary">Donate Now.</a>
+        <a href="#" class="cta-button secondary">Feel Proud.</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll-to-top button (appears when user scrolls down) -->
+  <button class="scroll-top" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+  <!-- Simple script to show/hide scroll button and scroll to top -->
+  <script>
+    // Get the button
+    var scrollBtn = document.getElementById('scrollTopBtn');
+    // Show button when user scrolls down 100px
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollBtn.style.display = 'flex';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    };
+    // When the user clicks the button, scroll to the top
+    scrollBtn.onclick = function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+</body>
+</html>
